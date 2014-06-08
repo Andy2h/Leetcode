@@ -18,6 +18,7 @@ private:
         }
         
         for(int i = 0; i < rest.size(); i++){
+            // remove the duplication
             if(i > 0 && rest[i] == rest[i-1]) continue;
             int t = rest[i];
             
