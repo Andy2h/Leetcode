@@ -43,3 +43,4 @@ public:
         return s.substr(s_ind, max_len);
     }
 };
+
