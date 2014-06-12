@@ -27,6 +27,7 @@ public:
         ListNode *right = sortList(q);
         return merge_list(left, right);
     }
+
 private:
     ListNode *merge_list(ListNode *left, ListNode *right){
         ListNode dummy(0);

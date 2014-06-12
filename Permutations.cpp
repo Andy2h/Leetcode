@@ -13,7 +13,6 @@ public:
     
 private:
     // sofar and rest can be passed by reference to avoid unnecessary
-    // space allocation
     void permute_helper(vector<vector<int>> &result, vector<int> &sofar, vector<int> &rest){
         if(rest.empty()){
             result.push_back(sofar);
