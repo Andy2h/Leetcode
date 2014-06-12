@@ -1,4 +1,5 @@
-My solutions to the Leetcode online judge.
+My solutions to the Leetcode online judge problems.
+https://oj.leetcode.com/problems/
 
 More explanation for each question will come soon. I will categorizes them as well.
 - General idea for the solution.
