@@ -60,3 +60,27 @@ private:
         }
     }
 };
+
+class Solution {
+public:
+    vector<vector<int> > combine(int n, int k) {
+        vector<vector<int>> result;
+        vector<int> t;
+        combine_helper(result, t, n, 1, k);
+        return result;
+    }
+    
+private:
+    void combine_helper(vector<vector<int>> &result, vector<int> &sofar, int n, int s, int k){
+        if(k == 0){
+            result.push_back(sofar);
+            return;
+        }
+        
+        for(int i = s; i <= n; i++){
+            sofar.push_back(i);
+            combine_helper(result, sofar, n, i+1, k-1);
+            sofar.pop_back();
+        }
+    }
+};
