@@ -1,7 +1,7 @@
 class Solution {
 public:
     void reverseWords(string &s) {
-        if(s=="") return;
+        if(s == "") return;
         
         reverse_str(s, 0, s.size()-1);
         
